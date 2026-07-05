@@ -244,6 +244,27 @@ p {
   padding: 24px;
 }
 
+.support-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 920px;
+}
+
+.support-layout .panel {
+  max-width: none;
+}
+
+.support-list {
+  margin: 12px 0 0;
+  padding-left: 20px;
+  color: var(--muted);
+}
+
+.support-list li + li {
+  margin-top: 8px;
+}
+
 .email-link {
   overflow-wrap: anywhere;
   font-size: 1.08rem;
@@ -311,6 +332,10 @@ p {
   .policy,
   .content-grid article {
     padding: 22px;
+  }
+
+  .support-layout {
+    grid-template-columns: 1fr;
   }
 }
 
